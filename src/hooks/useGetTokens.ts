@@ -8,7 +8,7 @@ export default function useGetTokens(formattedNetwork: string) {
     staleTime: 1000 * 60,
     queryFn: async () => {
       const tokens = await fetchNullableWithSessionCache<TokenList>(
-        `https://raw.githubusercontent.com/saberdao/saber-registry-dist/master/data/token-list.${formattedNetwork}.json`
+        `https://raw.githubusercontent.com/toolboxdao/saber-registry-dist/master/data/token-list.${formattedNetwork}.json`
       );
 
       if (!tokens) {

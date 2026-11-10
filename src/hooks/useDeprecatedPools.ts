@@ -10,7 +10,7 @@ export default function useDeprecatedPools() {
             const swaps = await fetchNullableWithSessionCache<
                 readonly string[]
             >(
-                `https://raw.githubusercontent.com/saberdao/info/main/deprecatedPools.json`,
+                `https://raw.githubusercontent.com/toolboxdao/info/main/deprecatedPools.json`,
             );
 
             if (!swaps) {

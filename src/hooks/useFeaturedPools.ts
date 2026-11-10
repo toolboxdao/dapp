@@ -10,7 +10,7 @@ export default function useFeaturedPools() {
             const swaps = await fetchNullableWithSessionCache<
                 readonly string[]
             >(
-                `https://raw.githubusercontent.com/saberdao/info/main/featuredPools.json`,
+                `https://raw.githubusercontent.com/toolboxdao/info/main/featuredPools.json`,
             );
 
             if (!swaps) {

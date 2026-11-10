@@ -16,7 +16,7 @@ export default function usePoolsData() {
         staleTime: 1000 * 60 * 60,
         queryFn: async () => {
             // Get LATEST record
-            const data = await fetch('https://raw.githubusercontent.com/saberdao/birdeye-data/refs/heads/main/volume.json');
+            const data = await fetch('https://raw.githubusercontent.com/toolboxdao/birdeye-data/refs/heads/main/volume.json');
             const pools = await data?.json();
 
             return pools as PoolsMetricInfo;

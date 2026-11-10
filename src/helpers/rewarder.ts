@@ -50,7 +50,7 @@ export const getRewarder = async (network: string, rewarder: string) => {
   }
 
   const rewarders = await fetchNullableWithSessionCache<RewarderInfo>(
-    `https://raw.githubusercontent.com/saberdao/rewarder-list-build/master/${network}/rewarders/${rewarder}/full.json`
+    `https://raw.githubusercontent.com/toolboxdao/rewarder-list-build/master/${network}/rewarders/${rewarder}/full.json`
   );
 
   if (!rewarders) {
