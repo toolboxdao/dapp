@@ -10,7 +10,7 @@ export default function useGetSwaps(formattedNetwork: string) {
       const swaps = await fetchNullableWithSessionCache<
         readonly DetailedSwapSummary[]
       >(
-        `https://raw.githubusercontent.com/saberdao/saber-registry-dist/master/data/swaps.${formattedNetwork}.json`
+        `https://raw.githubusercontent.com/toolboxdao/saber-registry-dist/master/data/swaps.${formattedNetwork}.json`
       );
 
       if (!swaps) {

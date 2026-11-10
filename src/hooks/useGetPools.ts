@@ -14,7 +14,7 @@ export default function useGetPools(formattedNetwork: string) {
         };
         pools: readonly PoolInfoRaw[];
       }>(
-        `https://raw.githubusercontent.com/saberdao/saber-registry-dist/master/data/pools-info.${formattedNetwork}.json`
+        `https://raw.githubusercontent.com/toolboxdao/saber-registry-dist/master/data/pools-info.${formattedNetwork}.json`
       );
 
       if (!data) {

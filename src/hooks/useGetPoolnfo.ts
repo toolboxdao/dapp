@@ -14,7 +14,7 @@ export default function useGetPoolInfo() {
         staleTime: 1000 * 60,
         queryFn: async () => {
             const data = await fetchNullableWithSessionCache<Record<string, Info>>(
-                `https://raw.githubusercontent.com/saberdao/info/main/poolInfo.json`,
+                `https://raw.githubusercontent.com/toolboxdao/info/main/poolInfo.json`,
             );
 
             if (!data) {
